@@ -23,6 +23,7 @@ requirements:
     - rasterio
     - scipy
     - xarray
+    - pillow
 test:
   imports:
     - rioxarray

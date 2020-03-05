@@ -24,7 +24,7 @@ requirements:
     - scipy
     - xarray
     - pillow
-    - pyproj >= 2
+    - pyproj >=2
 test:
   imports:
     - rioxarray

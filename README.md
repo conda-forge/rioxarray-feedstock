@@ -5,9 +5,13 @@ Home: http://github.com/corteva/rioxarray
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rioxarray-feedstock/blob/master/LICENSE.txt)
 
 Summary: rasterio xarray extension.
+
+Development: http://github.com/corteva/rioxarray
+
+Documentation: https://corteva.github.io/rioxarray
 
 rasterio xarray extension.
 

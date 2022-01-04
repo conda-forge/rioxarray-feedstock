@@ -1,5 +1,5 @@
 {% set name = "rioxarray" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 88b21353f4e2bd54219865d0cebf84b65ab2a072e92c079714a1bdb7b31f131e
+  sha256: 303e39c30918899ceeb601db628273a55796268e9e4e8b78b836080586c350e7
 
 build:
   number: 0

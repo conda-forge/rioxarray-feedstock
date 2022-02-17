@@ -1,5 +1,5 @@
 {% set name = "rioxarray" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: da58be8e1f5c6d03c75cffc13480208c8f47eaba4fb5371ed8fb61eadf818144
+  sha256: 45334b534f51c0357c2e64e9f7359c5d9a8c89108f739179756c3caa4fcd4873
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - rasterio
+    - rasterio >=1.1.1
     - scipy
     - xarray >=0.17
     - pyproj >=2.2

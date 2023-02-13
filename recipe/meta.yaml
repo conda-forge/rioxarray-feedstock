@@ -10,7 +10,7 @@ source:
   sha256: 04133647f53164c3347b1c6182a1264576386574076ca3c3052dfa90cddf4e48
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -25,6 +25,7 @@ requirements:
     - xarray >=0.17
     - pyproj >=2.2
     - packaging
+    - numpy >=1.21
 test:
   imports:
     - rioxarray

@@ -10,17 +10,17 @@ source:
   sha256: bbbda47fd7eb04c0986df553f11aa0bdbc9846e75601b8ebd704fc8573bfb835
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
-    - python >=3.8
-    - rasterio >=1.1.1
+    - python >=3.9
+    - rasterio >=1.2
     - scipy
     - xarray >=0.17
     - pyproj >=2.2

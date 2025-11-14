@@ -27,7 +27,7 @@ requirements:
     - xarray >=2024.7.0
     - pyproj >=3.3
     - packaging
-    - numpy >=1.23
+    - numpy >=2
 test:
   requires:
     - python {{ python_min }}

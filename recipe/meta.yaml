@@ -11,9 +11,9 @@ source:
   sha256: a292d96f4d6412c05ff09629b72523ae2e9c42598183f5e9c555fc368f867c0f
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
 
 requirements:
   host:
@@ -31,8 +31,11 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - rioxarray
+  commands:
+    - pip check
 
 about:
   home: http://github.com/corteva/rioxarray

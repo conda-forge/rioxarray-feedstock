@@ -1,0 +1,54 @@
+schema_version: 1
+
+context:
+  python_min: 3.12
+  version: 0.21.0
+
+package:
+  name: rioxarray
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/r/rioxarray/rioxarray-${{ version }}.tar.gz
+  sha256: a292d96f4d6412c05ff09629b72523ae2e9c42598183f5e9c555fc368f867c0f
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - packaging
+    - rasterio >=1.4.3
+    - xarray >=2024.7.0,<2025.12
+    - pyproj >=3.3
+    - numpy >=2
+
+tests:
+  - python:
+      imports:
+        - rioxarray
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  homepage: http://github.com/corteva/rioxarray
+  license: Apache-2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: rasterio xarray extension.
+  description: rasterio xarray extension.
+  documentation: https://corteva.github.io/rioxarray
+  repository: http://github.com/corteva/rioxarray
+
+extra:
+  recipe-maintainers:
+    - snowman2

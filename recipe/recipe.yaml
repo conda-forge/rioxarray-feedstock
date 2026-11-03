@@ -13,14 +13,13 @@ source:
   sha256: b5ea51c4218e079c68e302f9cdb9ae4981a9ee6927f22d32a1abd9bb1eab929c
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools
     - pip
   run:
     - python >=${{ python_min }}
@@ -39,14 +38,14 @@ tests:
         - '*'
 
 about:
-  homepage: http://github.com/corteva/rioxarray
+  homepage: http://github.com/vylor/rioxarray
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: rasterio xarray extension.
   description: rasterio xarray extension.
-  documentation: https://corteva.github.io/rioxarray
-  repository: http://github.com/corteva/rioxarray
+  documentation: https://vylor.github.io/rioxarray
+  repository: http://github.com/vylor/rioxarray
 
 extra:
   recipe-maintainers:

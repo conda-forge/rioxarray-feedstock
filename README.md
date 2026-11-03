@@ -3,15 +3,15 @@ About rioxarray-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rioxarray-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/corteva/rioxarray
+Home: http://github.com/vylor/rioxarray
 
 Package license: Apache-2.0
 
 Summary: rasterio xarray extension.
 
-Development: http://github.com/corteva/rioxarray
+Development: http://github.com/vylor/rioxarray
 
-Documentation: https://corteva.github.io/rioxarray
+Documentation: https://vylor.github.io/rioxarray
 
 rasterio xarray extension.
 

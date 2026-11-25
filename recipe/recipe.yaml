@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: '3.13'
-  version: 0.24.0
+  version: "0.25.0"
 
 package:
   name: rioxarray
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/rioxarray/rioxarray-${{ version }}.tar.gz
-  sha256: b5ea51c4218e079c68e302f9cdb9ae4981a9ee6927f22d32a1abd9bb1eab929c
+  sha256: 26b5617a2c68bbc1b1c3f104c2aa8ae4b5f787d368234106545427cbdef7db28
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps
 
